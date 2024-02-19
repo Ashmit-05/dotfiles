@@ -1,0 +1,62 @@
+import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/aura.toml"]
+
+live_config_reload = true
+
+[font]
+size = 20
+
+[font.normal]
+# family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
+
+[window]
+decorations = "Buttonless"
+opacity = 0.9
+blur = true
+startup_mode = "Maximized"
+dynamic_title = true
+
+[window.padding]
+x = 5
+y = 5
+
+[window.dimensions]
+columns = 70
+lines = 24
+
+# [colors.primary]
+# background = "0x1E1D2F"
+# foreground = "0xD9E0EE"
+#
+# [colors.cursor]
+# text = "0x1E1D2F"
+# cursor = "0xF5E0DC"
+#
+# [colors.normal]
+# black = "0x6E6C7E"
+# red = "0xF28FAD"
+# green = "0xABE9B3"
+# yellow = "0xFAE3B0"
+# blue = "0x96CDFB"
+# magenta = "0xF5C2E7"
+# cyan = "0x89DCEB"
+# white = "0xD9E0EE"
+#
+# [colors.bright]
+# black = "0x988BA2"
+# red = "0xF28FAD"
+# green = "0xABE9B3"
+# yellow = "0xFAE3B0"
+# blue = "0x96CDFB"
+# magenta = "0xF5C2E7"
+# cyan = "0x89DCEB"
+# white = "0xD9E0EE"
+#
+# [[colors.indexed_colors]]
+# index = 16
+# color = "0xF8BD96"
+#
+# [[colors.indexed_colors]]
+# index = 17
+# color = "0xF5E0DC"
+#
