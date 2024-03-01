@@ -1,4 +1,4 @@
-import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/aura.toml"]
+import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/aura.toml"]
 
 live_config_reload = true
 
