@@ -131,3 +131,5 @@ t() {
     fi
 }
 
+
+export FZF_DEFAULT_OPTS="--layout=reverse --border -i"
