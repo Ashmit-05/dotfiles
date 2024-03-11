@@ -138,5 +138,5 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
       --color=prompt:#f03187,spinner:#af5fff,pointer:#af5fff,header:#87afaf
         --color=border:#262626,label:#aeaeae,query:#d9d9d9
-          --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
+          --border="rounded" --border-label="" --preview="bat --color=always --style=numbers --line-range=:500 {}" --preview-window="border-rounded" --prompt="> "
             --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
