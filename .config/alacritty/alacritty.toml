@@ -12,9 +12,10 @@ family = "JetBrainsMono Nerd Font"
 [window]
 decorations = "Buttonless"
 opacity = 0.9
-blur = true
+#blur = true
 startup_mode = "Maximized"
 dynamic_title = true
+option_as_alt = "Both"
 
 [window.padding]
 x = 5

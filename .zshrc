@@ -15,9 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="archcraft-dwm"
 ZSH_THEME="refined"
+#ZSH_THEME="ultima"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,4 +131,12 @@ t() {
 }
 
 
-export FZF_DEFAULT_OPTS="--layout=reverse --border -i"
+export FZF_DEFAULT_OPTS="--layout=reverse --border -i -m -e"
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --layout=reverse --border -i -m -e
+  --color=fg:#d0d0d0,fg+:#d0d0d0,bg:#121212,bg+:#262626
+    --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
+      --color=prompt:#f03187,spinner:#af5fff,pointer:#af5fff,header:#87afaf
+        --color=border:#262626,label:#aeaeae,query:#d9d9d9
+          --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
+            --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
