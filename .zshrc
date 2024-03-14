@@ -133,10 +133,10 @@ t() {
 
 export FZF_DEFAULT_OPTS="--layout=reverse --border -i -m -e"
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --layout=reverse --border -i -m -e
-  --color=fg:#d0d0d0,fg+:#d0d0d0,bg:#121212,bg+:#262626
-    --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
-      --color=prompt:#f03187,spinner:#af5fff,pointer:#af5fff,header:#87afaf
-        --color=border:#262626,label:#aeaeae,query:#d9d9d9
-          --border="rounded" --border-label="" --preview="bat --color=always --style=numbers --line-range=:500 {}" --preview-window="border-rounded" --prompt="> "
-            --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+  --color=fg:#e21a81,fg+:#8c3fea,bg:#000000,bg+:#212122
+  --color=hl:#b7bc29,hl+:#0c830c,info:#afaf87,marker:#83a65c
+  --color=prompt:#1edab7,spinner:#cbc9cd,pointer:#8c3fea,header:#87afaf
+  --color=border:#28c57f,label:#aeaeae,query:#d9d9d9
+  --border="rounded" --border-label="" --preview="bat --color=always --style=numbers --line-range=:500 {}" --preview-window="border-rounded" --prompt="> "
+  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
+  --layout="reverse"'

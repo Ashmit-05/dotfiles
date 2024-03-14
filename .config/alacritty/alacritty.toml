@@ -6,13 +6,12 @@ live_config_reload = true
 size = 23
 
 [font.normal]
-# family = "FiraCode Nerd Font Mono"
 family = "JetBrainsMono Nerd Font"
 
 [window]
 decorations = "Buttonless"
-opacity = 0.9
-#blur = true
+opacity = 0.65
+blur = true
 startup_mode = "Maximized"
 dynamic_title = true
 option_as_alt = "Both"
