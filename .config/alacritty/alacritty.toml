@@ -10,15 +10,15 @@ family = "JetBrainsMono Nerd Font"
 
 [window]
 decorations = "Buttonless"
-opacity = 0.65
-blur = true
+opacity = 0.75
+#blur = true
 startup_mode = "Maximized"
 dynamic_title = true
 option_as_alt = "Both"
 
 [window.padding]
-x = 5
-y = 5
+x = 3
+y = 0
 
 [window.dimensions]
 columns = 70
