@@ -10,7 +10,7 @@ family = "JetBrainsMono Nerd Font"
 
 [window]
 decorations = "Buttonless"
-opacity = 0.75
+opacity = 0.7
 #blur = true
 startup_mode = "Maximized"
 dynamic_title = true
