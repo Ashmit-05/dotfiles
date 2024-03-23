@@ -21,3 +21,4 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 nnoremap <silent> <C-f> :Files<CR>
 
+set scrolloff=8
