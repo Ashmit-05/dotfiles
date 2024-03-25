@@ -10,6 +10,9 @@ Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'kien/ctrlp.vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 " Nerd tree mappings
@@ -22,3 +25,5 @@ let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 nnoremap <silent> <C-f> :Files<CR>
 
 set scrolloff=8
+set encoding=UTF-8
+set backspace=indent,eol,start

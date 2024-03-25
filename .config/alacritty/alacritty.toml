@@ -1,4 +1,4 @@
-import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/aura.toml"]
+import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/catppuccin.toml"]
 
 live_config_reload = true
 
@@ -9,7 +9,7 @@ size = 23
 family = "JetBrainsMono Nerd Font"
 
 [window]
-decorations = "Buttonless"
+decorations = "None"
 opacity = 0.75
 #blur = true
 startup_mode = "Maximized"
