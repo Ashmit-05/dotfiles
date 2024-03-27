@@ -22,3 +22,5 @@ let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 nnoremap <silent> <C-f> :Files<CR>
 
 set scrolloff=8
+set encoding=UTF-8
+set backspace=indent,eol,start
