@@ -120,6 +120,7 @@ PATH=$PATH:$GOPATH/bin
 
 
 alias r=". ranger"
+alias vim="nvim"
 
 # tree alias
 t() {
