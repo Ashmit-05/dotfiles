@@ -120,11 +120,19 @@ return require('packer').startup(function(use)
 	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 	use 'romgrk/barbar.nvim'
 
+	-- use {
+	-- 	'goolord/alpha-nvim',
+	-- 	requires = { 'nvim-tree/nvim-web-devicons' },
+	-- 	config = function ()
+	-- 		require'alpha'.setup(require'alpha.themes.startify'.config)
+	-- 	end
+	-- }
+
 	use {
-		'goolord/alpha-nvim',
-		requires = { 'nvim-tree/nvim-web-devicons' },
-		config = function ()
-			require'alpha'.setup(require'alpha.themes.startify'.config)
+		"startup-nvim/startup.nvim",
+		requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+		config = function()
+			require"startup".setup({theme = "startify"})
 		end
 	}
 
@@ -141,6 +149,26 @@ return require('packer').startup(function(use)
 		event = "InsertEnter",
 		config = function()
 			require("nvim-autopairs").setup {}
+		end
+	}
+
+	use({
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+		after = "nvim-web-devicons", -- keep this if you're using NvChad
+		config = function()
+			require("barbecue").setup()
+		end,
+	})
+
+	use {
+		'numToStr/Comment.nvim',
+		config = function()
+			require('Comment').setup()
 		end
 	}
 
