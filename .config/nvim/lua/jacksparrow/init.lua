@@ -10,3 +10,8 @@ vim.opt.shiftwidth = 2
 -- Enable mouse support
 vim.opt.mouse = "a"
 
+vim.cmd[[
+	nnoremap G Gzz
+	nnoremap o zzo
+]]
+

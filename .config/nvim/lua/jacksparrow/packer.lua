@@ -128,4 +128,20 @@ return require('packer').startup(function(use)
 		end
 	}
 
+	use 'nvim-tree/nvim-tree.lua'
+
+	use {
+		'ms-jpq/chadtree',
+		branch = 'chad',
+		run = 'python3 -m chadtree deps'
+	}
+
+	use {
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
+
 end)
