@@ -128,12 +128,30 @@ return require('packer').startup(function(use)
 	-- 	end
 	-- }
 
+	-- use {
+	-- 	"startup-nvim/startup.nvim",
+	-- 	requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+	-- 	config = function()
+	-- 		require"startup".setup({theme = "startify"})
+	-- 	end
+	-- }
+
 	use {
-		"startup-nvim/startup.nvim",
-		requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+		'nvimdev/dashboard-nvim',
+		event = 'VimEnter',
 		config = function()
-			require"startup".setup({theme = "startify"})
-		end
+			require('dashboard').setup {
+				theme = 'hyper',
+				shortcut_type = 'number',
+				config = {
+					week_header = { enable = true },
+					packages = { enable = false },
+					project = { enable = false, limit = 2 },
+					mru = { limit = 9 },
+				}
+			}
+		end,
+		requires = {'nvim-tree/nvim-web-devicons'}
 	}
 
 	use 'nvim-tree/nvim-tree.lua'
