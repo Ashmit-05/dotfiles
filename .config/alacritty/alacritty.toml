@@ -12,7 +12,7 @@ family = "JetBrainsMono Nerd Font"
 decorations = "Buttonless"
 opacity = 0.8
 # blur = true
-startup_mode = "Maximized"
+# startup_mode = "Maximized"
 dynamic_title = true
 option_as_alt = "Both"
 
@@ -20,9 +20,13 @@ option_as_alt = "Both"
 x = 3
 y = 0
 
+[window.position]
+x = 17
+y = 70
+
 [window.dimensions]
-columns = 70
-lines = 24
+columns = 105
+lines = 28
 
 # [colors.primary]
 # background = "0x1E1D2F"
