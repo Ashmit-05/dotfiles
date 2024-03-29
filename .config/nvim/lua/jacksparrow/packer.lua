@@ -154,12 +154,17 @@ return require('packer').startup(function(use)
 		requires = {'nvim-tree/nvim-web-devicons'}
 	}
 
-	use 'nvim-tree/nvim-tree.lua'
+	-- use {
+	-- 	'ms-jpq/chadtree',
+	-- 	branch = 'chad',
+	-- 	run = 'python3 -m chadtree deps'
+	-- }
 
 	use {
-		'ms-jpq/chadtree',
-		branch = 'chad',
-		run = 'python3 -m chadtree deps'
+		'dinhhuy258/sfm.nvim',
+		config = function()
+			require("sfm").setup()
+		end
 	}
 
 	use {
