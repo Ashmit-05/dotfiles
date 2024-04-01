@@ -1,0 +1,15 @@
+# Font
+font_family JetBrainsMono Nerd Font
+font_size 23
+
+# Window
+background_opacity 0.7
+#background_image /Users/ashmit/Wallpapers/wallhaven-8586my.png
+hide_window_decorations yes
+include dracula.conf
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME

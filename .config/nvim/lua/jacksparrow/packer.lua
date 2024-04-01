@@ -109,8 +109,6 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	use 'mbbill/undotree'
-
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -194,5 +192,9 @@ return require('packer').startup(function(use)
 			require('Comment').setup()
 		end
 	}
+
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	end}
 
 end)
