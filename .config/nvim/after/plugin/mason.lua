@@ -44,7 +44,7 @@ local default_setup = function(server)
 end
 
 require('mason-lspconfig').setup({
-  ensure_installed = {"gopls","lua_ls"},
+  ensure_installed = {"gopls","lua_ls","jdtls"},
   handlers = {
     default_setup,
   },
