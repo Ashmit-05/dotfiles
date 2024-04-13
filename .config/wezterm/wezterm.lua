@@ -16,7 +16,7 @@ config.initial_rows = 27
 
 wezterm.on('gui-startup', function(cmd) -- set startup Window position
   local tab, pane, window = mux.spawn_window(cmd or
-    {position={x=25,y=170}}
+    {position={x=23,y=170}}
   )
 end)
 

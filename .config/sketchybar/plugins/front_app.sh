@@ -23,7 +23,7 @@ case $INFO in
     ICON=
     ;;
 "Finder")
-    ICON=
+    ICON=🔍
     ;;
 "Google Chrome")
     ICON_PADDING_RIGHT=7
@@ -62,8 +62,17 @@ case $INFO in
     ICON_PADDING_RIGHT=3
     ICON=󰶘
     ;;
+"WezTerm")
+    ICON_PADDING_RIGHT=3
+    ICON=
+		# ICON='>_'
+    ;;
+"Obsidian")
+    ICON_PADDING_RIGHT=3
+		ICON=
+    ;;
 *)
-    ICON=﯂
+    ICON=🖥️
     ;;
 esac
 
