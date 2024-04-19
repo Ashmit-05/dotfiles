@@ -11,7 +11,7 @@ config.enable_tab_bar = false
 config.window_background_opacity = 0.8
 config.window_decorations = "NONE"
 config.macos_window_background_blur = 10
-config.initial_cols = 100
+config.initial_cols = 99
 config.initial_rows = 27
 
 wezterm.on('gui-startup', function(cmd) -- set startup Window position
