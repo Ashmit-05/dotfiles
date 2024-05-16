@@ -1,9 +1,9 @@
-import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/catppuccin.toml"]
+import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/coolnight.toml"]
 
 live_config_reload = true
 
 [font]
-size = 23
+size = 21
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"

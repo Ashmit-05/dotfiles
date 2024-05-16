@@ -15,8 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="refined"
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="refined"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -121,6 +121,9 @@ PATH=$PATH:$GOPATH/bin
 
 alias r=". ranger"
 alias vim="nvim"
+alias icat="kitten icat"
+alias ls="eza --icons"
+alias air="~/go/bin/air"
 
 # tree alias
 t() {
@@ -159,3 +162,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 
 export PATH=$PATH:/Users/ashmit/.spicetify
+eval "$(zoxide init zsh)"
+pokemon-colorscripts -r
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet

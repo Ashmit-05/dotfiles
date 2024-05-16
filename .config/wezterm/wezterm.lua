@@ -4,7 +4,7 @@ local mux = wezterm.mux
 
 -- This will hold the configuration.
 local config = {}
-config.color_scheme = 'Cai (Gogh)'
+config.color_scheme = 'catppuccin-mocha'
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 23
 config.enable_tab_bar = false
