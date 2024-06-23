@@ -1,4 +1,4 @@
-import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/coolnight.toml"]
+import = ["/Users/ashmit/.config/alacritty/themes/alacritty-theme/themes/themes/gruvbox_dark.toml"]
 
 live_config_reload = true
 
@@ -10,7 +10,7 @@ family = "JetBrainsMono Nerd Font"
 
 [window]
 decorations = "Buttonless"
-opacity = 0.75
+# opacity = 0.75
 # blur = true
 # startup_mode = "Maximized"
 dynamic_title = true
@@ -18,7 +18,7 @@ option_as_alt = "Both"
 
 [window.padding]
 x = 3
-y = 0
+y = 2
 
 [window.position]
 x = 17

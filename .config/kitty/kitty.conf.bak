@@ -11,7 +11,8 @@ font_size               21.0
 
 #cursor
 
-cursor_shape            beam
+cursor_shape            block
+shell_integration       no-cursor
 # cursor_color            white
 cursor_beam_thickness   1.5
 
@@ -41,37 +42,34 @@ window_margin_width     1
 #lines
 scrollback_lines        2000
 
-#colors
-foreground #bdc3df
-background #101017
-selection_foreground #101017
-selection_background #bdc3df
-
-cursor #bdc3df
-cursor_text_color #101017
-url_color #85b6ff
-
-tab_bar_background #101017
-active_tab_foreground #bdc3df
-active_tab_background #33333f
-inactive_tab_foreground #dedeff
-inactive_tab_background #101017
-
-color0  #33333f
-color1  #ff568e
-color2  #64de83
-color3  #efff73
-color4  #73a9ff
-color5  #946ff7
-color6  #62c6da
-color7  #dedeff
-color8  #43435a
-color9  #ff69a2
-color10 #73de8a
-color11 #f3ff85
-color12 #85b6ff
-color13 #a481f7
-color14 #71c2d9
-color15 #ebebff
+# Josean Martinez coolnight
+foreground #CBE0F0
+background #011423
+selection_foreground #011423
+selection_background #CBE0F0
+cursor #47FF9C
+cursor_text_color #011423
+url_color #011423
+tab_bar_background #011423
+active_tab_foreground #CBE0F0
+active_tab_background #214969
+inactive_tab_foreground #24EAF7
+inactive_tab_background #011423
+color0 #214969
+color1 #E52E2E
+color2 #44FFB1
+color3 #FFE073
+color4 #0FC5ED
+color5 #a277ff
+color6 #24EAF7
+color7 #24EAF7
+color8 #214969
+color9 #E52E2E
+color10 #44FFB1
+color11 #FFE073
+color12 #A277FF
+color13 #a277ff
+color14 #24EAF7
+color15 #24EAF7
 
 macos_quit_when_last_window_closed yes

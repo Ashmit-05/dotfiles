@@ -15,8 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="refined"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="awesomepanda"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -165,3 +165,4 @@ export PATH=$PATH:/Users/ashmit/.spicetify
 eval "$(zoxide init zsh)"
 pokemon-colorscripts -r
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
