@@ -1,18 +1,23 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
-case ${INFO} in
-0)
-    ICON=""
-    ICON_PADDING_RIGHT=21
-    ;;
-[0-9])
-    ICON=""
-    ICON_PADDING_RIGHT=12
-    ;;
-*)
-    ICON=""
-    ICON_PADDING_RIGHT=6
-    ;;
-esac
+# This is taken from josean-dev, he made a great video on it, check out his repo here: 
+# https://github.com/josean-dev/dev-environment-files/tree/main/.config/sketchybar
 
-sketchybar --set $NAME icon=$ICON icon.padding_right=$ICON_PADDING_RIGHT label="$INFO%"
+# The volume_change event supplies a $INFO variable in which the current volume
+# percentage is passed to the script.
+
+if [ "$SENDER" = "volume_change" ]; then
+  VOLUME=$INFO
+
+  case $VOLUME in
+    [6-9][0-9]|100) ICON="􀊩"
+    ;;
+    [3-5][0-9]) ICON="􀊥"
+    ;;
+    [1-9]|[1-2][0-9]) ICON="􀊡"
+    ;;
+    *) ICON="􀊣"
+  esac
+
+  sketchybar --set $NAME icon="$ICON" label="$VOLUME%"
+fi
