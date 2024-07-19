@@ -3,7 +3,7 @@
 # This is taken from josean-dev, he made a great video on it, check out his repo here: 
 # https://github.com/josean-dev/dev-environment-files/tree/main/.config/sketchybar
 
-sketchybar --add item media e \
+sketchybar --add item media center \
            --set media label.color=$ACCENT_COLOR \
                        label.max_chars=20 \
                        icon.padding_left=0 \

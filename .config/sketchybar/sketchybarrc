@@ -16,6 +16,7 @@ ITEM_DIR="$CONFIG_DIR/items"
 
 sketchybar --bar height=24        \
                  blur_radius=30   \
+                 y_offset=5       \
                  position=top     \
                  sticky=on        \
                  padding_left=10  \
@@ -46,7 +47,7 @@ sketchybar --default icon.font="JetBrains Mono:Semibold:15.0"  \
 source $ITEM_DIR/spaces.sh
 source $ITEM_DIR/front_app.sh
 
-# -- Right Side Of Notch Items --
+# -- Center Items --
 source $ITEM_DIR/media.sh
 
 # -- Right Side Items --
