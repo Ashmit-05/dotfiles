@@ -1,2 +1,2 @@
 require("jacksparrow")
-print("savvy, eh?")
+print("Drink Up Me Hearties, Yo Ho!")
