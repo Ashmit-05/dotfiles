@@ -1,10 +1,10 @@
 yabai -m config layout bsp
 
-yabai -m config top_padding    33
-yabai -m config bottom_padding 7
-yabai -m config left_padding   11
-yabai -m config right_padding  11
-yabai -m config window_gap     11
+yabai -m config top_padding 40
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+yabai -m config window_gap 10
 
 yabai -m config mouse_modifier cmd
 yabai -m config mouse_action1 move
@@ -16,3 +16,4 @@ yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 
+borders active_color=0xff6b6bc1 inactive_color=0xff494d64 width=7.0 &

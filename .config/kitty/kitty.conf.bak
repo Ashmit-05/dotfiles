@@ -7,7 +7,7 @@ bold_italic_font        auto
 
 #font size
 
-font_size               21.0
+font_size               19.0
 
 #cursor
 
@@ -76,6 +76,6 @@ macos_quit_when_last_window_closed yes
 
 
 # BEGIN_KITTY_THEME
-# Adwaita darker
+# Source Code X
 include current-theme.conf
 # END_KITTY_THEME
