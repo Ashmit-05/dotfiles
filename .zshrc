@@ -15,8 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="awesomepanda"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="refined"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -124,6 +124,7 @@ alias vim="nvim"
 alias icat="kitten icat"
 alias ls="eza --icons"
 alias air="~/go/bin/air"
+alias clk="tty-clock"
 
 # tree alias
 t() {
@@ -166,3 +167,10 @@ eval "$(zoxide init zsh)"
 pokemon-colorscripts -r
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
+[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+
+
+
+eval "$(starship init zsh)"

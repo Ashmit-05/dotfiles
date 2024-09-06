@@ -1,0 +1,67 @@
+format = """
+$python\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$hg_branch\
+$direnv\
+$env_var\
+$time\
+$sudo\
+$line_break\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+
+right_format="""
+$battery
+"""
+
+[battery]
+full_symbol = '󰁹'
+charging_symbol = '󱐋'
+discharging_symbol = '󱊣'
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+discharging_symbol = '󱊡'
+
+[[battery.display]]
+threshold = 80
+style = 'green'
+discharging_symbol = '󱊢'
+
+[character]
+success_symbol = '[󱞩](bold purple)'
+error_symbol = '[󱞩](bold red)'
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+time_format = '%T'
+style = 'bold blue'
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+style = 'purple'
+
+[python]
+pyenv_version_name = true
+format = '[(${version} )(\($virtualenv\) )]($style)'
+style = 'green'

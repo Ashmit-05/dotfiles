@@ -9,7 +9,7 @@ size = 19
 family = "JetBrainsMono Nerd Font"
 
 [window]
-decorations = "Buttonless"
+decorations = "None"
 # opacity = 0.75
 # blur = true
 # startup_mode = "Maximized"
