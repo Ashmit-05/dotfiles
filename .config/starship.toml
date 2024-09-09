@@ -33,9 +33,13 @@ style = 'bold red'
 discharging_symbol = '󱊡'
 
 [[battery.display]]
-threshold = 80
+threshold = 60
 style = 'green'
 discharging_symbol = '󱊢'
+
+[[battery.display]]
+threshold = 100
+style = 'green'
 
 [character]
 success_symbol = '[󱞩](bold purple)'
