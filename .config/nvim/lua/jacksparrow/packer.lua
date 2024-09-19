@@ -186,7 +186,23 @@ return require('packer').startup(function(use)
 
 	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 
-	use 'xiyaowong/transparent.nvim'
+	use {
+		'xiyaowong/transparent.nvim',
+		config = function ()
+			require('transparent').setup({
+				enable = true,  -- enable transparency for all components
+				extra_groups = { -- add groups to make transparent
+					'TelescopeNormal',
+					'TelescopeBorder',
+					'TelescopePromptNormal',
+					'TelescopeResultsNormal',
+					'TelescopePreviewNormal',
+					-- add other UI elements that you want transparent here
+				},
+				exclude = {},  -- you can exclude specific groups if needed
+			})
+		end
+	}
 
 	use { "catppuccin/nvim", as = "catppuccin" }
 
@@ -248,13 +264,22 @@ return require('packer').startup(function(use)
 		}
 	}
 
+	use {
+		"rcarriga/nvim-notify",
+		config = function ()
+			require("notify").setup({
+				render = "minimal"
+			})
+		end
+	}
+
 	use { "ellisonleao/gruvbox.nvim" }
 
 	use	{
 		"vague2k/vague.nvim",
 		config = function()
 			require("vague").setup({
-				-- optional configuration here
+				transparent = true,
 			})
 		end
 	}
@@ -265,5 +290,18 @@ return require('packer').startup(function(use)
 			require("oil").setup()
 		end,
 	})
+
+	use {
+		"folke/tokyonight.nvim",
+		config = function ()
+			require("tokyonight").setup({
+				transparent = true,
+				styles = {
+					sidebars = "transparent",
+					floats = "transparent",
+				}
+			})
+		end
+	}
 
 end)

@@ -12,8 +12,7 @@ vim.api.nvim_set_keymap('n', '<Tab>', '<Cmd>BufferNext<CR>', { noremap = true, s
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>x', '<Cmd>BufferClose<CR>', {noremap = true, silent = true})
 
--- vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>SFMToggle<cr>', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>ToggleTerm<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>SFMToggle<cr>', { noremap = true, silent = true })
 
 vim.cmd[[
 	nnoremap G Gzz
@@ -33,14 +32,14 @@ vim.keymap.set('n', '<leader>P', '"+P')  -- paste before cursor
 vim.keymap.set("n", "<leader>nl", function()
   require("noice").cmd("last")
 end)
-
 vim.keymap.set("n", "<leader>nh", function()
   require("noice").cmd("history")
 end)
-
 vim.keymap.set("n", "<leader>nd", function()
   require("noice").cmd("dismiss")
 end)
+vim.api.nvim_set_keymap('n', '<leader>nt', ':Telescope notify<CR>', { noremap = true, silent = true })
+
 
 -- oil.nvim
-vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open parent directory" })
