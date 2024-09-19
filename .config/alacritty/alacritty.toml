@@ -18,7 +18,7 @@ option_as_alt = "Both"
 
 [window.padding]
 x = 3
-y = 2
+# y = 2
 
 [window.position]
 x = 17

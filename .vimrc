@@ -24,3 +24,7 @@ nnoremap <silent> <C-f> :Files<CR>
 set scrolloff=8
 set encoding=UTF-8
 set backspace=indent,eol,start
+
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 20

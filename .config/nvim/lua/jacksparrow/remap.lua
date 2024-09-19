@@ -12,8 +12,8 @@ vim.api.nvim_set_keymap('n', '<Tab>', '<Cmd>BufferNext<CR>', { noremap = true, s
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>x', '<Cmd>BufferClose<CR>', {noremap = true, silent = true})
 
-vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>SFMToggle<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>ToggleTerm<cr>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>SFMToggle<cr>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>ToggleTerm<cr>', { noremap = true, silent = true })
 
 vim.cmd[[
 	nnoremap G Gzz
@@ -28,3 +28,19 @@ vim.keymap.set({'n', 'v'}, '<leader>Y', '"+Y') -- yank line
 -- Paste from system clipboard
 vim.keymap.set('n', '<leader>p', '"+p')  -- paste after cursor
 vim.keymap.set('n', '<leader>P', '"+P')  -- paste before cursor
+
+-- noice keymaps
+vim.keymap.set("n", "<leader>nl", function()
+  require("noice").cmd("last")
+end)
+
+vim.keymap.set("n", "<leader>nh", function()
+  require("noice").cmd("history")
+end)
+
+vim.keymap.set("n", "<leader>nd", function()
+  require("noice").cmd("dismiss")
+end)
+
+-- oil.nvim
+vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })

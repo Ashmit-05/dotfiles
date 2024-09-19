@@ -98,6 +98,11 @@ _G.packer_plugins = {
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/opt/barbecue.nvim",
     url = "https://github.com/utilyre/barbecue.nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -119,7 +124,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\nì\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\vconfig\bmru\1\0\1\nlimit\3\t\fproject\1\0\2\nlimit\3\2\venable\1\rpackages\1\0\1\venable\1\16week_header\1\0\4\16week_header\0\fproject\0\bmru\0\rpackages\0\1\0\1\venable\2\1\0\3\vconfig\0\18shortcut_type\vnumber\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\nì\2\0\0\5\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\3=\3\r\2B\0\2\1K\0\1\0\vconfig\bmru\1\0\1\nlimit\3\t\fproject\1\0\2\venable\1\nlimit\3\2\rpackages\1\0\1\venable\1\16week_header\1\0\4\16week_header\0\rpackages\0\bmru\0\fproject\0\1\0\1\venable\2\1\0\3\18shortcut_type\vnumber\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -143,6 +148,11 @@ _G.packer_plugins = {
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/goto-preview",
     url = "https://github.com/rmagatti/goto-preview"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -163,6 +173,17 @@ _G.packer_plugins = {
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n≥\5\0\0\a\0 \0+6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\15\0005\4\v\0005\5\n\0=\5\f\0045\5\r\0=\5\14\4=\4\16\0035\4\17\0005\5\18\0=\5\f\0045\5\19\0=\5\14\0045\5\20\0005\6\21\0=\6\22\5=\5\23\0045\5\25\0005\6\24\0=\6\26\5=\5\27\4=\4\28\3=\3\29\2B\0\2\0016\0\0\0'\2\30\0B\0\2\0029\0\2\0005\2\31\0B\0\2\1K\0\1\0\1\0\1\22background_colour\f#1E1E1E\vnotify\nviews\14popupmenu\16win_options\17winhighlight\1\0\1\17winhighlight\0\1\0\2\vNormal\vNormal\16FloatBorder\19DiagnosticInfo\vborder\fpadding\1\3\0\0\3\0\3\1\1\0\2\fpadding\0\nstyle\frounded\1\0\2\vheight\3\n\nwidth\3<\1\0\2\brow\3\b\bcol\b50%\1\0\5\rposition\0\vborder\0\rrelative\veditor\16win_options\0\tsize\0\18cmdline_popup\1\0\2\14popupmenu\0\18cmdline_popup\0\tsize\1\0\2\vheight\tauto\nwidth\3<\rposition\1\0\2\rposition\0\tsize\0\1\0\2\brow\3\5\bcol\b50%\vroutes\1\0\2\vroutes\0\nviews\0\topts\1\0\1\tskip\2\vfilter\1\0\2\vfilter\0\topts\0\1\0\2\tkind\14recording\nevent\rmsg_show\nsetup\nnoice\frequire\0" },
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
     loaded = false,
@@ -175,11 +196,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-jdtls"] = {
-    loaded = true,
-    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
-    url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -196,6 +212,11 @@ _G.packer_plugins = {
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/SmiteshP/nvim-navic"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -207,10 +228,16 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["obsidian.nvim"] = {
-    config = { "\27LJ\2\nˆ\1\0\1\r\0\r\0*'\1\0\0\n\0\0\0X\2\15Ä\18\4\0\0009\2\1\0'\5\2\0'\6\3\0B\2\4\2\18\4\2\0009\2\1\2'\5\4\0'\6\0\0B\2\4\2\18\4\2\0009\2\5\2B\2\2\2\18\1\2\0X\2\15Ä)\2\1\0)\3\4\0)\4\1\0M\2\vÄ\18\6\1\0006\a\6\0009\a\a\a6\t\b\0009\t\t\t)\vA\0)\fZ\0B\t\3\0A\a\0\2&\1\a\6O\2ı\1276\2\n\0006\4\v\0009\4\f\4B\4\1\0A\2\0\2'\3\3\0\18\4\1\0&\2\4\2L\2\2\0\ttime\aos\rtostring\vrandom\tmath\tchar\vstring\nlower\18[^A-Za-z0-9-]\6-\6 \tgsub\5˜\1\1\0\5\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0005\4\3\0>\4\1\3=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\17note_id_func\0\16daily_notes\1\0\2\vformat\r%d-%m-%Y\vfolder\vDaily/\15workspaces\1\0\3\17note_id_func\0\16daily_notes\0\15workspaces\0\1\0\2\tname\nnotes\tpath\30~/Documents/Second Brain/\nsetup\robsidian\frequire\0" },
+    config = { "\27LJ\2\nˆ\1\0\1\r\0\r\0*'\1\0\0\n\0\0\0X\2\15Ä\18\4\0\0009\2\1\0'\5\2\0'\6\3\0B\2\4\2\18\4\2\0009\2\1\2'\5\4\0'\6\0\0B\2\4\2\18\4\2\0009\2\5\2B\2\2\2\18\1\2\0X\2\15Ä)\2\1\0)\3\4\0)\4\1\0M\2\vÄ\18\6\1\0006\a\6\0009\a\a\a6\t\b\0009\t\t\t)\vA\0)\fZ\0B\t\3\0A\a\0\2&\1\a\6O\2ı\1276\2\n\0006\4\v\0009\4\f\4B\4\1\0A\2\0\2'\3\3\0\18\4\1\0&\2\4\2L\2\2\0\ttime\aos\rtostring\vrandom\tmath\tchar\vstring\nlower\18[^A-Za-z0-9-]\6-\6 \tgsub\5˜\1\1\0\5\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0005\4\3\0>\4\1\3=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\17note_id_func\0\16daily_notes\1\0\2\vformat\r%d-%m-%Y\vfolder\vDaily/\15workspaces\1\0\3\16daily_notes\0\17note_id_func\0\15workspaces\0\1\0\2\tname\nnotes\tpath\30~/Documents/Second Brain/\nsetup\robsidian\frequire\0" },
     loaded = true,
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
     url = "https://github.com/epwalsh/obsidian.nvim"
+  },
+  ["oil.nvim"] = {
+    config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -238,11 +265,16 @@ _G.packer_plugins = {
     path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+  ["transparent.nvim"] = {
     loaded = true,
-    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/transparent.nvim",
+    url = "https://github.com/xiyaowong/transparent.nvim"
+  },
+  ["vague.nvim"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nvague\frequire\0" },
+    loaded = true,
+    path = "/Users/ashmit/.local/share/nvim/site/pack/packer/start/vague.nvim",
+    url = "https://github.com/vague2k/vague.nvim"
   },
   ["vim-tmux-navigator"] = {
     config = { "\27LJ\2\nü\3\0\0\6\0\19\0)6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\a\0'\4\b\0005\5\t\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\16\0'\4\17\0005\5\18\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\"<cmd>TmuxNavigatePrevious<cr>\n<c-\\>\1\0\1\vsilent\2\31<cmd>TmuxNavigateRight<cr>\n<c-l>\1\0\1\vsilent\2\28<cmd>TmuxNavigateUp<cr>\n<c-k>\1\0\1\vsilent\2\30<cmd>TmuxNavigateDown<cr>\n<c-j>\1\0\1\vsilent\2\30<cmd>TmuxNavigateLeft<cr>\n<c-h>\6n\20nvim_set_keymap\bapi\bvim\0" },
@@ -253,26 +285,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 -- Config for: obsidian.nvim
 time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\nˆ\1\0\1\r\0\r\0*'\1\0\0\n\0\0\0X\2\15Ä\18\4\0\0009\2\1\0'\5\2\0'\6\3\0B\2\4\2\18\4\2\0009\2\1\2'\5\4\0'\6\0\0B\2\4\2\18\4\2\0009\2\5\2B\2\2\2\18\1\2\0X\2\15Ä)\2\1\0)\3\4\0)\4\1\0M\2\vÄ\18\6\1\0006\a\6\0009\a\a\a6\t\b\0009\t\t\t)\vA\0)\fZ\0B\t\3\0A\a\0\2&\1\a\6O\2ı\1276\2\n\0006\4\v\0009\4\f\4B\4\1\0A\2\0\2'\3\3\0\18\4\1\0&\2\4\2L\2\2\0\ttime\aos\rtostring\vrandom\tmath\tchar\vstring\nlower\18[^A-Za-z0-9-]\6-\6 \tgsub\5˜\1\1\0\5\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0005\4\3\0>\4\1\3=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\17note_id_func\0\16daily_notes\1\0\2\vformat\r%d-%m-%Y\vfolder\vDaily/\15workspaces\1\0\3\17note_id_func\0\16daily_notes\0\15workspaces\0\1\0\2\tname\nnotes\tpath\30~/Documents/Second Brain/\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
+try_loadstring("\27LJ\2\nˆ\1\0\1\r\0\r\0*'\1\0\0\n\0\0\0X\2\15Ä\18\4\0\0009\2\1\0'\5\2\0'\6\3\0B\2\4\2\18\4\2\0009\2\1\2'\5\4\0'\6\0\0B\2\4\2\18\4\2\0009\2\5\2B\2\2\2\18\1\2\0X\2\15Ä)\2\1\0)\3\4\0)\4\1\0M\2\vÄ\18\6\1\0006\a\6\0009\a\a\a6\t\b\0009\t\t\t)\vA\0)\fZ\0B\t\3\0A\a\0\2&\1\a\6O\2ı\1276\2\n\0006\4\v\0009\4\f\4B\4\1\0A\2\0\2'\3\3\0\18\4\1\0&\2\4\2L\2\2\0\ttime\aos\rtostring\vrandom\tmath\tchar\vstring\nlower\18[^A-Za-z0-9-]\6-\6 \tgsub\5˜\1\1\0\5\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0005\4\3\0>\4\1\3=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\1K\0\1\0\17note_id_func\0\16daily_notes\1\0\2\vformat\r%d-%m-%Y\vfolder\vDaily/\15workspaces\1\0\3\16daily_notes\0\17note_id_func\0\15workspaces\0\1\0\2\tname\nnotes\tpath\30~/Documents/Second Brain/\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
 time([[Config for obsidian.nvim]], false)
--- Config for: sfm.nvim
-time([[Config for sfm.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bsfm\frequire\0", "config", "sfm.nvim")
-time([[Config for sfm.nvim]], false)
 -- Config for: vim-tmux-navigator
 time([[Config for vim-tmux-navigator]], true)
 try_loadstring("\27LJ\2\nü\3\0\0\6\0\19\0)6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\a\0'\4\b\0005\5\t\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\16\0'\4\17\0005\5\18\0B\0\5\1K\0\1\0\1\0\1\vsilent\2\"<cmd>TmuxNavigatePrevious<cr>\n<c-\\>\1\0\1\vsilent\2\31<cmd>TmuxNavigateRight<cr>\n<c-l>\1\0\1\vsilent\2\28<cmd>TmuxNavigateUp<cr>\n<c-k>\1\0\1\vsilent\2\30<cmd>TmuxNavigateDown<cr>\n<c-j>\1\0\1\vsilent\2\30<cmd>TmuxNavigateLeft<cr>\n<c-h>\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-tmux-navigator")
 time([[Config for vim-tmux-navigator]], false)
--- Config for: goto-preview
-time([[Config for goto-preview]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17goto-preview\frequire\0", "config", "goto-preview")
-time([[Config for goto-preview]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -281,6 +301,26 @@ time([[Config for Comment.nvim]], false)
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n≥\5\0\0\a\0 \0+6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0004\3\3\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\4>\4\1\3=\3\t\0025\3\15\0005\4\v\0005\5\n\0=\5\f\0045\5\r\0=\5\14\4=\4\16\0035\4\17\0005\5\18\0=\5\f\0045\5\19\0=\5\14\0045\5\20\0005\6\21\0=\6\22\5=\5\23\0045\5\25\0005\6\24\0=\6\26\5=\5\27\4=\4\28\3=\3\29\2B\0\2\0016\0\0\0'\2\30\0B\0\2\0029\0\2\0005\2\31\0B\0\2\1K\0\1\0\1\0\1\22background_colour\f#1E1E1E\vnotify\nviews\14popupmenu\16win_options\17winhighlight\1\0\1\17winhighlight\0\1\0\2\vNormal\vNormal\16FloatBorder\19DiagnosticInfo\vborder\fpadding\1\3\0\0\3\0\3\1\1\0\2\fpadding\0\nstyle\frounded\1\0\2\vheight\3\n\nwidth\3<\1\0\2\brow\3\b\bcol\b50%\1\0\5\rposition\0\vborder\0\rrelative\veditor\16win_options\0\tsize\0\18cmdline_popup\1\0\2\14popupmenu\0\18cmdline_popup\0\tsize\1\0\2\vheight\tauto\nwidth\3<\rposition\1\0\2\rposition\0\tsize\0\1\0\2\brow\3\5\bcol\b50%\vroutes\1\0\2\vroutes\0\nviews\0\topts\1\0\1\tskip\2\vfilter\1\0\2\vfilter\0\topts\0\1\0\2\tkind\14recording\nevent\rmsg_show\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
+-- Config for: goto-preview
+time([[Config for goto-preview]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17goto-preview\frequire\0", "config", "goto-preview")
+time([[Config for goto-preview]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
+-- Config for: sfm.nvim
+time([[Config for sfm.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\bsfm\frequire\0", "config", "sfm.nvim")
+time([[Config for sfm.nvim]], false)
+-- Config for: vague.nvim
+time([[Config for vague.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nvague\frequire\0", "config", "vague.nvim")
+time([[Config for vague.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-web-devicons ]]

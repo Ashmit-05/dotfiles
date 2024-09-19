@@ -115,6 +115,7 @@ return require('packer').startup(function(use)
 	}
 
   use 'nvim-tree/nvim-web-devicons'
+
 	use {
 		'lewis6991/gitsigns.nvim',
 		config = function ()
@@ -123,13 +124,6 @@ return require('packer').startup(function(use)
 	} -- OPTIONAL: for git status
 	use 'romgrk/barbar.nvim'
 
-	-- use {
-	-- 	"startup-nvim/startup.nvim",
-	-- 	requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
-	-- 	config = function()
-	-- 		require"startup".setup({theme = "startify"})
-	-- 	end
-	-- }
 
 	use {
 		'nvimdev/dashboard-nvim',
@@ -148,12 +142,6 @@ return require('packer').startup(function(use)
 		end,
 		requires = {'nvim-tree/nvim-web-devicons'}
 	}
-
-	-- use {
-	-- 	'ms-jpq/chadtree',
-	-- 	branch = 'chad',
-	-- 	run = 'python3 -m chadtree deps'
-	-- }
 
 	use {
 		'dinhhuy258/sfm.nvim',
@@ -190,14 +178,92 @@ return require('packer').startup(function(use)
 		end
 	}
 
-	use {
-		"akinsho/toggleterm.nvim", tag = '*', config = function()
-			require("toggleterm").setup()
+	-- use {
+	-- 	"akinsho/toggleterm.nvim", tag = '*', config = function()
+	-- 		require("toggleterm").setup()
+	-- 	end
+	-- }
+
+	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+
+	use 'xiyaowong/transparent.nvim'
+
+	use { "catppuccin/nvim", as = "catppuccin" }
+
+	use	{
+		"folke/noice.nvim",
+		config = function ()
+			require("noice").setup({
+				routes = {
+					{
+						filter = {
+							event = "msg_show",
+							kind = "recording",
+						},
+						opts = { skip = true },
+					},
+				},
+				views = {
+					cmdline_popup = {
+						position = {
+							row = 5,
+							col = "50%",
+						},
+						size = {
+							width = 60,
+							height = "auto",
+						},
+					},
+					popupmenu = {
+						relative = "editor",
+						position = {
+							row = 8,
+							col = "50%",
+						},
+						size = {
+							width = 60,
+							height = 10,
+						},
+						border = {
+							style = "rounded",
+							padding = { 0, 1 },
+						},
+						win_options = {
+							winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+						},
+					},
+				},
+			})
+			require("notify").setup({
+				background_colour = "#1E1E1E", -- Example: a dark gray background
+			})
+		end,
+		requires = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		}
+	}
+
+	use { "ellisonleao/gruvbox.nvim" }
+
+	use	{
+		"vague2k/vague.nvim",
+		config = function()
+			require("vague").setup({
+				-- optional configuration here
+			})
 		end
 	}
 
-	use 'mfussenegger/nvim-jdtls'
-
-	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+	use({
+		"stevearc/oil.nvim",
+		config = function()
+			require("oil").setup()
+		end,
+	})
 
 end)

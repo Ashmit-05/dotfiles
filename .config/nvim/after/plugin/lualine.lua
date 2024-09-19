@@ -1,3 +1,13 @@
+-- Function to check if recording is active and return the register being recorded
+local function recording_macro()
+  local recording = vim.fn.reg_recording()
+  if recording ~= "" then
+    return "Recording @" .. recording
+  end
+  return ""  -- Return an empty string if no macro is being recorded
+end
+
+-- Your existing lualine config with the macro recording component added
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -21,7 +31,12 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_x = {
+      'encoding', 
+      'fileformat', 
+      'filetype', 
+      { recording_macro, color = { fg = '#ff9e64', gui = 'bold' } }  -- Custom macro recording component
+    },
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
@@ -38,3 +53,4 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
