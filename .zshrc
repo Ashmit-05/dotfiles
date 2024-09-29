@@ -125,6 +125,7 @@ alias icat="kitten icat"
 alias ls="eza --icons"
 alias air="~/go/bin/air"
 alias clk="tty-clock"
+alias fetch="fastfetch"
 
 # tree alias
 t() {

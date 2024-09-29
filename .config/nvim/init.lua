@@ -1,2 +1,2 @@
-require("jacksparrow")
-print("Drink Up Me Hearties, Yo Ho!")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
