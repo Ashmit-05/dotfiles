@@ -16,7 +16,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="refined"
+ZSH_THEME="refined"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,7 +78,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting web-search)
+plugins=(git zsh-syntax-highlighting web-search zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,6 +126,20 @@ alias ls="eza --icons"
 alias air="~/go/bin/air"
 alias clk="tty-clock"
 alias fetch="fastfetch"
+alias g++='g++-15'
+
+todo() {
+  if [ -n "$TMUX" ]; then
+    local original_dir="$PWD"
+    cd ~
+    nvim todo.md
+    cd $original_dir
+  else
+    tmux new-session -As todo-session "cd ~; nvim todo.md"
+  fi
+}
+
+
 
 # tree alias
 t() {
@@ -137,15 +151,11 @@ t() {
 }
 
 
-export FZF_DEFAULT_OPTS="--layout=reverse --border -i -m -e"
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#e21a81,fg+:#8c3fea,bg:#000000,bg+:#212122
-  --color=hl:#b7bc29,hl+:#0c830c,info:#afaf87,marker:#83a65c
-  --color=prompt:#1edab7,spinner:#cbc9cd,pointer:#8c3fea,header:#87afaf
-  --color=border:#28c57f,label:#aeaeae,query:#d9d9d9
-  --border="rounded" --border-label="" --preview="bat --color=always --style=numbers --line-range=:500 {}" --preview-window="border-rounded" --prompt="> "
-  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
-  --layout="reverse"'
+# export FZF_DEFAULT_OPTS="--layout=reverse --border -i -m -e"
+# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+#   --border="rounded" --border-label=""  --preview-window="border-rounded" --prompt="> "
+#   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
+#   --layout="reverse"'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -174,4 +184,4 @@ export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
 
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
