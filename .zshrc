@@ -116,17 +116,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 PATH=$PATH:~/.local/bin
-PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$HOME/go/bin"
+
 
 
 alias r=". ranger"
-alias vim="nvim"
 alias icat="kitten icat"
 alias ls="eza --icons"
 alias air="~/go/bin/air"
 alias clk="tty-clock"
 alias fetch="fastfetch"
 alias g++='g++-15'
+alias ga="git add"
+alias gc="git commit -m"
+alias vim="nvim"
 
 todo() {
   if [ -n "$TMUX" ]; then
@@ -184,4 +187,3 @@ export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
 
 
-# eval "$(starship init zsh)"

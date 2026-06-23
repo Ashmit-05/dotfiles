@@ -1,10 +1,22 @@
+# Kill old instance
+pkill -f "borders" 2>/dev/null
+
+# Start borders with visible test colors
+borders \
+  style=round \
+  width=6.0 \
+  hidpi=off \
+  active_color=0xFF32B0CF \
+  inactive_color=0xFF000000 &
+
+
 yabai -m config layout bsp
 
-yabai -m config top_padding    02
-yabai -m config bottom_padding 05
-yabai -m config left_padding   05
-yabai -m config right_padding  05
-yabai -m config window_gap 05
+yabai -m config top_padding    10
+yabai -m config bottom_padding 12
+yabai -m config left_padding   12
+yabai -m config right_padding  12
+yabai -m config window_gap 10
 
 # set mouse follows focus mode (default: off)
 yabai -m config mouse_follows_focus on
